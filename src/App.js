@@ -19,10 +19,9 @@ const App = () => {
             <Card.Body>
               <Card.Title>Projects</Card.Title>
               <Card.Text>
-                Some quick example text to build on the card title and make up the bulk of
-                the card's content.
+                Here are the projects I have created and worked on. 
               </Card.Text>
-              <Button variant="primary">Go somewhere</Button>
+              <Button variant="primary">See Projects</Button>
             </Card.Body>
           </Card>
         </Col>
@@ -32,10 +31,9 @@ const App = () => {
             <Card.Body>
               <Card.Title>About Me</Card.Title>
               <Card.Text>
-                Some quick example text to build on the card title and make up the bulk of
-                the card's content.
+                Here you can find out about me and what makes me tick. 
               </Card.Text>
-              <Button variant="primary">Go somewhere</Button>
+              <Button variant="primary">Learn More</Button>
             </Card.Body>
           </Card>
         </Col>
