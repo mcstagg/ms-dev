@@ -1,5 +1,6 @@
 import './App.css';
 import mike from './mike.png';
+import concrete from './concrete.PNG';
 import Banner from './Banner';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Row, Col, Button, Card } from 'react-bootstrap';
@@ -14,7 +15,7 @@ const App = () => {
       <Row className="">
         <Col className="pl-5 pt-5 ">
           <Card className="">
-            <Card.Img variant="top" src={mike} />
+            <Card.Img variant="top" src={concrete} />
             <Card.Body>
               <Card.Title>Projects</Card.Title>
               <Card.Text>
