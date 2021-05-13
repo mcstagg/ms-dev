@@ -1,7 +1,8 @@
 import resume from './resume.PNG';
+import resumePDF from './Resume.pdf';
 import BModal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
-import { Row, Col, Container, Image, ResponsiveEmbed } from 'react-bootstrap';
+import { Row, Col, Container, Image } from 'react-bootstrap';
 
 const ResumeModal = ({ ...props}) => {
 
@@ -22,18 +23,13 @@ const ResumeModal = ({ ...props}) => {
         <BModal.Body>
           <Container>
           <Row>
-          <Col className="block-example border border-dark pr-1 pt-4">
-            <Image src={resume} className="float-left pl-0 pb-4"/>
-            {/* <div style={{ width: 660, height: 'auto' }}>
-              <ResponsiveEmbed aspectRatio="16by9">
-                <embed type="image/svg+xml" src={resume} />
-              </ResponsiveEmbed>
-            </div> */}
-            {/* <div style={{width: 500, height: 'auto'}}>
-            <ResponsiveEmbed a16by9>
-              <embed type="image/svg+xml" src={resume} />
-            </ResponsiveEmbed>
-            </div> */}
+          <Col className="block-example border border-dark">
+            <embed 
+              src={resumePDF}
+              type="application/pdf"
+              width="100%"
+              height="600px"
+            />
           </Col>
           </Row>
           </Container>
