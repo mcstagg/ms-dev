@@ -6,8 +6,6 @@ import { Row, Col, Container, Image } from 'react-bootstrap';
 
 const ResumeModal = ({ ...props}) => {
 
-    let onCloseClick = props.onCloseClick;
-
     return (
       <BModal
         {...props}

@@ -15,20 +15,16 @@ const App = () => {
     setResumeModalShow(true);
   }
 
-  const onCloseClick = () => {
-    setResumeModalShow(false)
-  }
-
   return (
 
     <>
       <Banner showResumeModal={showResumeModal}/>
 
-      <Row className="">
-        <Col className="pl-5 pt-5 ">
-          <Card className="">
+      <Row className="p-4">
+        <Col className="pr-3">
+          <Card className="tiles float-right">
             <Card.Img variant="top" src={concrete} />
-            <Card.Body>
+            <Card.Body className="mx-auto">
               <Card.Title>Projects</Card.Title>
               <Card.Text>
                 Here are the projects I have created and worked on. 
@@ -37,8 +33,8 @@ const App = () => {
             </Card.Body>
           </Card>
         </Col>
-        <Col className="p-5">
-        <Card className="width-auto">
+        <Col className="">
+        <Card className="tiles">
             <Card.Img variant="top" src={mike} />
             <Card.Body>
               <Card.Title>About Me</Card.Title>
