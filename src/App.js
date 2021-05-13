@@ -1,16 +1,28 @@
+import { useState } from 'react';
 import './App.css';
 import mike from './mike.png';
 import concrete from './concrete.PNG';
 import Banner from './Banner';
+import ResumeModal from './ResumeModal';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Row, Col, Button, Card } from 'react-bootstrap';
 
 const App = () => {
 
+  const [resumeModalShow, setResumeModalShow] = useState(false);
+
+  const showResumeModal = () => {
+    setResumeModalShow(true);
+  }
+
+  const onCloseClick = () => {
+    setResumeModalShow(false)
+  }
+
   return (
 
     <>
-      <Banner />
+      <Banner showResumeModal={showResumeModal}/>
 
       <Row className="">
         <Col className="pl-5 pt-5 ">
@@ -38,6 +50,14 @@ const App = () => {
           </Card>
         </Col>
       </Row>
+
+      <ResumeModal 
+        show={resumeModalShow} 
+        onHide={
+          () => setResumeModalShow(false)
+        }
+        showResumeModal={showResumeModal}
+      />
     </>
   );
 }
