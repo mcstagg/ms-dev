@@ -27,19 +27,47 @@ const App = () => {
               <Card.Text>
                 Here are the projects I have created and worked on. 
               </Card.Text>
-              <Button variant="primary">See Projects</Button>
+              <Button
+                className="pr-3"
+                variant="primary" 
+                onClick={
+                  ()=> window.open(
+                    "https://mcstagg.github.io/concrete-volume-calculator", 
+                    "_blank"
+                  )
+                }
+              >
+                Concrete Volume Calculator
+              </Button>
+              <Button
+                className="mt-1" 
+                variant="primary" 
+                onClick={
+                  ()=> window.open(
+                    "https://mcstagg.github.io/tca-jenga-app", 
+                    "_blank"
+                  )
+                }
+              >
+                Jenga Table Top Companion
+              </Button>
             </Card.Body>
           </Card>
         </Col>
         <Col className="">
         <Card className="tiles">
             <Card.Img variant="top" src={`${process.env.PUBLIC_URL}/mike.png`} />
-            <Card.Body>
+            <Card.Body className="pb-5">
               <Card.Title>About Me</Card.Title>
               <Card.Text>
                 Here you can find out about me and what makes me tick. 
               </Card.Text>
-              <Button variant="primary">Learn More</Button>
+              <Button 
+                className="mb-2"
+                variant="primary"
+              >
+                Learn More
+              </Button>
             </Card.Body>
           </Card>
         </Col>
