@@ -1,7 +1,7 @@
 import BModal from 'react-bootstrap/Modal';
 import { Row, Col, Container } from 'react-bootstrap';
 
-const ResumeModal = ({ ...props}) => {
+const AboutMeModal = ({ ...props}) => {
 
     return (
       <BModal
@@ -12,28 +12,22 @@ const ResumeModal = ({ ...props}) => {
       >
         <BModal.Header closeButton>
           <BModal.Title id="contained-modal-title-vcenter">
-            Michael Stagg's Resume
+            About Me
           </BModal.Title>
         </BModal.Header>
         <BModal.Body>
           <Container>
           <Row>
           <Col className="block-example border border-dark">
-            <embed 
-              src={`${process.env.PUBLIC_URL}/Resume.pdf`}
-              type="application/pdf"
-              width="100%"
-              height="600px"
-            />
+            <h1>About Me</h1>
           </Col>
           </Row>
           </Container>
         </BModal.Body>
         <BModal.Footer>
-          {/* <Button onClick={onCloseClick}>Close</Button> */}
         </BModal.Footer>
       </BModal>
     );
   }
 
-  export default ResumeModal;
+  export default AboutMeModal;

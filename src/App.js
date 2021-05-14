@@ -4,13 +4,19 @@ import Banner from './components/Banner';
 import ResumeModal from './components/ResumeModal';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Row, Col, Button, Card } from 'react-bootstrap';
+import AboutMeModal from './AboutMeModal';
 
 const App = () => {
 
   const [resumeModalShow, setResumeModalShow] = useState(false);
+  const [aboutMeModalShow, setAboutMeModalShow] = useState(false);
 
   const showResumeModal = () => {
     setResumeModalShow(true);
+  }
+
+  const showAboutMeModal = () => {
+    setAboutMeModalShow(true);
   }
 
   return (
@@ -65,6 +71,7 @@ const App = () => {
               <Button 
                 className="mb-2"
                 variant="primary"
+                onClick={showAboutMeModal}
               >
                 Learn More
               </Button>
@@ -79,6 +86,14 @@ const App = () => {
           () => setResumeModalShow(false)
         }
         showResumeModal={showResumeModal}
+      />
+
+      <AboutMeModal
+        show={aboutMeModalShow} 
+        onHide={
+          () => setAboutMeModalShow(false)
+        }
+        showResumeModal={showAboutMeModal}
       />
     </>
   );
