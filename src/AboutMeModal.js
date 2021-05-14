@@ -18,8 +18,18 @@ const AboutMeModal = ({ ...props}) => {
         <BModal.Body>
           <Container>
           <Row>
-          <Col className="block-example border border-dark">
-            <h1>About Me</h1>
+          <Col className="block-example border border-dark p-3">
+            <p>
+              I am a person with a sense of adventure. I have
+              traveled around the united states and I experienced
+              many unique and interesting things along the way.
+            </p>
+            <p> 
+              I grew up pouring concrete and spent many years working
+              for my father's construction company. I realized that I 
+              did not want to stay in the field when I started developing 
+              an interest in programming and technology. 
+            </p>
           </Col>
           </Row>
           </Container>
