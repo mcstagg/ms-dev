@@ -1,9 +1,7 @@
 import { useState } from 'react';
 import './App.css';
-import mike from './mike.png';
-import concrete from './concrete.PNG';
-import Banner from './Banner';
-import ResumeModal from './ResumeModal';
+import Banner from './components/Banner';
+import ResumeModal from './components/ResumeModal';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Row, Col, Button, Card } from 'react-bootstrap';
 
@@ -23,7 +21,7 @@ const App = () => {
       <Row className="p-4">
         <Col className="pr-3">
           <Card className="tiles float-right">
-            <Card.Img variant="top" src={concrete} />
+            <Card.Img variant="top" src={`${process.env.PUBLIC_URL}/concrete.PNG`} />
             <Card.Body className="mx-auto">
               <Card.Title>Projects</Card.Title>
               <Card.Text>
@@ -35,7 +33,7 @@ const App = () => {
         </Col>
         <Col className="">
         <Card className="tiles">
-            <Card.Img variant="top" src={mike} />
+            <Card.Img variant="top" src={`${process.env.PUBLIC_URL}/mike.png`} />
             <Card.Body>
               <Card.Title>About Me</Card.Title>
               <Card.Text>
