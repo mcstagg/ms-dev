@@ -10,7 +10,16 @@ const Banner = (props) => {
     <div className="bg-dark p-4">
       <Row>
         <Col>
-          <h1 className="text-center text-light mb-3">Mike Stagg Dev</h1>
+          <h1 className="text-center text-light mb-3">
+            Mike Stagg
+          </h1>
+        </Col>
+      </Row>
+      <Row>
+        <Col>
+          <h5 className="text-center text-light mb-3">
+            Front End Developer specializing in ReactJS
+          </h5>
         </Col>
       </Row>  
       <Row>
