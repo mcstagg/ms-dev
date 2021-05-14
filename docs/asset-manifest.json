@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/ms-dev/static/css/main.51f21d28.chunk.css",
+    "main.js": "/ms-dev/static/js/main.c5ce8984.chunk.js",
+    "main.js.map": "/ms-dev/static/js/main.c5ce8984.chunk.js.map",
+    "runtime-main.js": "/ms-dev/static/js/runtime-main.88d46d09.js",
+    "runtime-main.js.map": "/ms-dev/static/js/runtime-main.88d46d09.js.map",
+    "static/css/2.4c97ca4f.chunk.css": "/ms-dev/static/css/2.4c97ca4f.chunk.css",
+    "static/js/2.63992d58.chunk.js": "/ms-dev/static/js/2.63992d58.chunk.js",
+    "static/js/2.63992d58.chunk.js.map": "/ms-dev/static/js/2.63992d58.chunk.js.map",
+    "static/js/3.01f08598.chunk.js": "/ms-dev/static/js/3.01f08598.chunk.js",
+    "static/js/3.01f08598.chunk.js.map": "/ms-dev/static/js/3.01f08598.chunk.js.map",
+    "index.html": "/ms-dev/index.html",
+    "static/css/2.4c97ca4f.chunk.css.map": "/ms-dev/static/css/2.4c97ca4f.chunk.css.map",
+    "static/css/main.51f21d28.chunk.css.map": "/ms-dev/static/css/main.51f21d28.chunk.css.map",
+    "static/js/2.63992d58.chunk.js.LICENSE.txt": "/ms-dev/static/js/2.63992d58.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.88d46d09.js",
+    "static/css/2.4c97ca4f.chunk.css",
+    "static/js/2.63992d58.chunk.js",
+    "static/css/main.51f21d28.chunk.css",
+    "static/js/main.c5ce8984.chunk.js"
+  ]
+}
