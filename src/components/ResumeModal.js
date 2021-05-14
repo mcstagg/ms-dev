@@ -1,7 +1,5 @@
-import resume from './resume.PNG';
-import resumePDF from './Resume.pdf';
+
 import BModal from 'react-bootstrap/Modal';
-import Button from 'react-bootstrap/Button';
 import { Row, Col, Container, Image } from 'react-bootstrap';
 
 const ResumeModal = ({ ...props}) => {
@@ -23,7 +21,7 @@ const ResumeModal = ({ ...props}) => {
           <Row>
           <Col className="block-example border border-dark">
             <embed 
-              src={resumePDF}
+              src={`${process.env.PUBLIC_URL}/Resume.pdf`}
               type="application/pdf"
               width="100%"
               height="600px"
