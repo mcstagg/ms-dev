@@ -17,16 +17,16 @@ const ResumeModal = ({ ...props}) => {
         </BModal.Header>
         <BModal.Body>
           <Container>
-          <Row>
-          <Col className="block-example border border-dark">
-            <embed 
-              src={`${process.env.PUBLIC_URL}/Resume.pdf`}
-              type="application/pdf"
-              width="100%"
-              height="600px"
-            />
-          </Col>
-          </Row>
+            <Row className="p-0"> 
+              <Col className="block-example border border-dark p-0">
+                <embed 
+                  src={`${process.env.PUBLIC_URL}/Resume.pdf`}
+                  type="application/pdf"
+                  width="100%"
+                  height="600px"
+                />
+              </Col>
+            </Row>
           </Container>
         </BModal.Body>
         <BModal.Footer>
