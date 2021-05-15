@@ -29,9 +29,6 @@ const ResumeModal = ({ ...props}) => {
             </Row>
           </Container>
         </BModal.Body>
-        <BModal.Footer>
-          {/* <Button onClick={onCloseClick}>Close</Button> */}
-        </BModal.Footer>
       </BModal>
     );
   }
