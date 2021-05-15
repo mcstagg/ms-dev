@@ -10,12 +10,14 @@ const ResumeModal = ({ ...props}) => {
         aria-labelledby="contained-modal-title-vcenter"
         centered
       >
-        <BModal.Header closeButton>
-          <BModal.Title id="contained-modal-title-vcenter">
+        <BModal.Header closeButton className="p-2">
+          <BModal.Title id="contained-modal-title-vcenter" className="pl-0">
             Michael Stagg's Resume
           </BModal.Title>
         </BModal.Header>
-        <BModal.Body>
+        <BModal.Body 
+          className="p-1"
+        >
           <Container>
             <Row className="p-0"> 
               <Col className="block-example border border-dark p-0">
