@@ -40,7 +40,7 @@ const App = () => {
                   )
                 }
               >
-                View Concrete Volume Calculator
+                Use Concrete Volume Calculator
               </Button>
             </Card.Body>
           </Card>
@@ -65,7 +65,7 @@ const App = () => {
                   )
                 }
               >
-                View Jenga Table Top Companion
+                Use Jenga Table Top Companion
               </Button>
             </Card.Body>
           </Card>
