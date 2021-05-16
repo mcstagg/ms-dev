@@ -12,7 +12,7 @@ const AboutMeModal = ({ ...props}) => {
       >
         <BModal.Header closeButton>
           <BModal.Title id="contained-modal-title-vcenter">
-            About Me
+            About Mike
           </BModal.Title>
         </BModal.Header>
         <BModal.Body>
@@ -39,8 +39,6 @@ const AboutMeModal = ({ ...props}) => {
           </Row>
           </Container>
         </BModal.Body>
-        <BModal.Footer>
-        </BModal.Footer>
       </BModal>
     );
   }

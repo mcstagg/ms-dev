@@ -1,19 +1,13 @@
 import { useState } from 'react';
 import './App.css';
 import Banner from './components/Banner';
-import ResumeModal from './components/ResumeModal';
+import AboutMeModal from './components/AboutMeModal';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Row, Col, Button, Card, CardDeck } from 'react-bootstrap';
-import AboutMeModal from './AboutMeModal';
 
 const App = () => {
 
-  const [resumeModalShow, setResumeModalShow] = useState(false);
   const [aboutMeModalShow, setAboutMeModalShow] = useState(false);
-
-  const showResumeModal = () => {
-    setResumeModalShow(true);
-  }
 
   const showAboutMeModal = () => {
     setAboutMeModalShow(true);
@@ -22,7 +16,7 @@ const App = () => {
   return (
 
     <div className="lock-min pb-3">
-      <Banner showResumeModal={showResumeModal}/>
+      <Banner/>
 
       <Row className="">
         <Col className="ml-3 mr-3">
@@ -95,20 +89,12 @@ const App = () => {
         </Col>
       </Row>
 
-      <ResumeModal 
-        show={resumeModalShow} 
-        onHide={
-          () => setResumeModalShow(false)
-        }
-        showResumeModal={showResumeModal}
-      />
-
       <AboutMeModal
         show={aboutMeModalShow} 
         onHide={
           () => setAboutMeModalShow(false)
         }
-        showResumeModal={showAboutMeModal}
+        showAboutMeModal={showAboutMeModal}
       />
     </div>
   );
