@@ -21,14 +21,14 @@ const App = () => {
 
   return (
 
-    <div className="lock-min">
+    <div className="lock-min pb-3">
       <Banner showResumeModal={showResumeModal}/>
 
       <Row className="pl-3 pr-3 mr-0 pr-0">
         <Col className="pr-0">
-          <Card className="tiles float-right mt-3">
+          <Card className="tiles mt-3 float-right">
             <Card.Img variant="top" src={`${process.env.PUBLIC_URL}/concrete.PNG`} />
-            <Card.Body className="mx-auto">
+            <Card.Body className="">
               <Card.Title>Projects</Card.Title>
               <Card.Text>
                 Here are the projects I have created and worked on. 
@@ -61,15 +61,15 @@ const App = () => {
           </Card>
         </Col>
         <Col className="pr-0">
-        <Card className="tiles mt-3">
+        <Card className="tiles mt-3 pb-5">
             <Card.Img variant="top" src={`${process.env.PUBLIC_URL}/mike.png`} />
-            <Card.Body className="pb-5">
+            <Card.Body className="">
               <Card.Title>About Me</Card.Title>
               <Card.Text>
                 Here you can find out about me and what makes me tick. 
               </Card.Text>
               <Button 
-                className="mb-2"
+                className="mb-1 mr-3"
                 variant="primary"
                 onClick={showAboutMeModal}
               >

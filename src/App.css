@@ -40,6 +40,8 @@
 .tiles {
   max-width: 400px;
   min-width: 190px !important;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .lock-min {
