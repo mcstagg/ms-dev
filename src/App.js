@@ -61,7 +61,7 @@ const App = () => {
           </Card>
         </Col>
         <Col className="pr-0">
-        <Card className="tiles mt-3 pb-5">
+        <Card className="tiles mt-3 pb-5 float-left">
             <Card.Img variant="top" src={`${process.env.PUBLIC_URL}/mike.png`} />
             <Card.Body className="">
               <Card.Title>About Me</Card.Title>
