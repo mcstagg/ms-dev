@@ -39,5 +39,9 @@
 
 .tiles {
   max-width: 400px;
-  max-height: 500px;
+  min-width: 190px !important;
+}
+
+.lock-min {
+  min-width: 259px;
 }

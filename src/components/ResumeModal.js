@@ -21,12 +21,18 @@ const ResumeModal = ({ ...props}) => {
           <Container>
             <Row className="p-0"> 
               <Col className="block-example border border-dark p-0">
-                <embed 
+                {/* <embed 
                   src={`${process.env.PUBLIC_URL}/Resume.pdf`}
                   type="application/pdf"
                   width="100%"
                   height="600px"
-                />
+                /> */}
+                <object
+                  data="https://drive.google.com/file/d/1974biQqFdM_2WCHlEbQ4k-VQaYC1tM2P/view?usp=sharing"
+                  width="100%"
+                  height="600px"
+                >
+                </object>
               </Col>
             </Row>
           </Container>

@@ -29,7 +29,8 @@ const Banner = (props) => {
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
               <Nav className="mr-auto">
-                <Nav.Link onClick={showResumeModal}>Resume</Nav.Link>
+                {/* <Nav.Link onClick={showResumeModal}>Resume</Nav.Link> */}
+                <Nav.Link onClick={()=> window.open("https://drive.google.com/file/d/1974biQqFdM_2WCHlEbQ4k-VQaYC1tM2P/view?usp=sharing", "_blank")}>Resume</Nav.Link>
                 <Nav.Link onClick={()=> window.open("https://github.com/mcstagg", "_blank")}>GitHub</Nav.Link>
                 <Nav.Link onClick={()=> window.open("https://www.linkedin.com/in/michael-stagg-0574571b9/", "_blank")}>LinkedIn</Nav.Link>
                 {/* <NavDropdown title="Dropdown" id="collasible-nav-dropdown">

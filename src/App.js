@@ -21,12 +21,12 @@ const App = () => {
 
   return (
 
-    <>
+    <div className="lock-min">
       <Banner showResumeModal={showResumeModal}/>
 
-      <Row className="p-4">
-        <Col className="pr-3">
-          <Card className="tiles float-right">
+      <Row className="pl-3 pr-3 mr-0 pr-0">
+        <Col className="pr-0">
+          <Card className="tiles float-right mt-3">
             <Card.Img variant="top" src={`${process.env.PUBLIC_URL}/concrete.PNG`} />
             <Card.Body className="mx-auto">
               <Card.Title>Projects</Card.Title>
@@ -60,8 +60,8 @@ const App = () => {
             </Card.Body>
           </Card>
         </Col>
-        <Col className="">
-        <Card className="tiles">
+        <Col className="pr-0">
+        <Card className="tiles mt-3">
             <Card.Img variant="top" src={`${process.env.PUBLIC_URL}/mike.png`} />
             <Card.Body className="pb-5">
               <Card.Title>About Me</Card.Title>
@@ -95,7 +95,7 @@ const App = () => {
         }
         showResumeModal={showAboutMeModal}
       />
-    </>
+    </div>
   );
 }
 
