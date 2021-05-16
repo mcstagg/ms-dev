@@ -26,9 +26,14 @@ const AboutMeModal = ({ ...props}) => {
             </p>
             <p> 
               I grew up pouring concrete and spent many years working
-              for my father's construction company. I realized that I 
-              did not want to stay in the field when I started developing 
-              an interest in programming and technology. 
+              for my father's construction company. I learned many 
+              skills working in the field that are directly related 
+              to the app development process.
+            </p>
+            <p>
+              I decided to pursue a career as Front End Developer 
+              when I began taking an interest in application 
+              design and technology in general. 
             </p>
           </Col>
           </Row>
