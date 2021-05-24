@@ -21,6 +21,33 @@ const App = () => {
       <Row className="">
         <Col className="ml-3 mr-3">
         <CardDeck className="justify-content-center">
+        <Card className="tiles mt-3">
+            <Card.Img variant="top" src={`${process.env.PUBLIC_URL}/hulu.PNG`} />
+            <Card.Body className="pt-3">
+              <Card.Title>Hulu 2.0 Reproduction</Card.Title>
+              <Card.Text>
+                This app is a reproduction of Hulu 2.0 using Next.js and 
+                Tailwind CSS framework. The app is built mobile first and uses a 
+                combo of grid and flexbox to properly display the app. It includes
+                cool features such as server side loading helping to optimize SEO
+                and Lazy Loading to only render the images in view. It also makes 
+                use of the new Just In Time (JIT) compiler. The images and movie 
+                info are fetched from the TMDB API.
+              </Card.Text>
+              <Button
+                className="mt-2"
+                variant="primary" 
+                onClick={
+                  ()=> window.open(
+                    "https://hulu-2-reproduction.vercel.app/", 
+                    "_blank"
+                  )
+                }
+              >
+                Use Hulu 2.0 Reproduction
+              </Button>
+            </Card.Body>
+          </Card>
           <Card className="tiles mt-3">
             <Card.Img variant="top" src={`${process.env.PUBLIC_URL}/concrete.PNG`} />
             <Card.Body className="pt-0">
@@ -28,7 +55,8 @@ const App = () => {
               <Card.Text>
                 This app is a construction materials calculator that processes
                 dimesnions and calculates and displays the total cubic yardage 
-                for the pour. The customer is then able to place the order.
+                for the pour. The customer is then able to place the order by
+                calling the API. 
               </Card.Text>
               <Button
                 className="mt-2"
