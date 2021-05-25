@@ -49,7 +49,7 @@ const App = () => {
             <Card.Body className="pt-0 mt-3">
               <Card.Title>Concrete Volume Calculator</Card.Title>
               <Card.Text>
-                I built this app as a takeoff calculator that processes dimensions, calculates the individual totals, and then displays the total cubic yardage for the pour. The customer is then able to place the order by calling the API which Proxies to a Lambda Express Server. In the server the order is confirmed and confirmation is sent back to the client. 
+                I built this app as a takeoff calculator that processes dimensions, calculates cubic yardage, and then displays the total cubic yardage for the pour. The customer is then able to place the order by calling the API which Proxies to a Lambda Express Server. In the server the order is confirmed and confirmation is sent back to the client. 
               </Card.Text>
               <Button
                 className="mt-2"
@@ -65,16 +65,17 @@ const App = () => {
               </Button>
             </Card.Body>
           </Card>
-          <Card className="tiles mt-3">
-            <Card.Img variant="top" src={`${process.env.PUBLIC_URL}/jenga.PNG`} />
+          <Card 
+            className="tiles mt-3"
+          >
+            <Card.Img 
+              variant="top" 
+              src={`${process.env.PUBLIC_URL}/jenga.PNG`} 
+            />
             <Card.Body className="pt-2 mt-2">
               <Card.Title>Jenga Table Top Compainion</Card.Title>
               <Card.Text>
-                This app is a companion for the board game Jenga. The player
-                is able to add and select player names. Then the game begins 
-                and players are able to keep track of moves, time, and other 
-                stats. When the game is over post game stats are displayed and 
-                the leaderboard is calculated. 
+                I built this app as a companion for the game Jenga. The players add and select player names. The game begins and players are able to keep track of moves, time, and other stats. When the game is over post game stats are displayed and the leaderboard is calculated. 
               </Card.Text>
               <Button
                 className="mt-1" 
