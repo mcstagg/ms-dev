@@ -47,3 +47,15 @@
 .lock-min {
   min-width: 259px;
 }
+
+.banner {
+  background-color: #06202A;
+}
+
+.nav {
+  background-color: #004D40;
+}
+
+.body {
+  background-color: lightgrey;
+}

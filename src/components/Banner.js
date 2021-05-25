@@ -7,7 +7,7 @@ const Banner = (props) => {
   
   return (
 
-    <div className="bg-dark p-4">
+    <div className="banner p-4">
       <Row>
         <Col>
           <h1 className="text-center text-light mb-3">
@@ -24,7 +24,7 @@ const Banner = (props) => {
       </Row>  
       <Row>
         <Col>
-          <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+          <Navbar collapseOnSelect expand="lg" className="nav" variant="dark">
             <Navbar.Brand href="#home">Mike's Links</Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">

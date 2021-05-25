@@ -31,10 +31,10 @@ const AboutMeModal = ({ ...props}) => {
               to the app development process.
             </p>
             <p>
-              I decided to pursue a career as Front End Developer 
+              I decided to pursue a career as a Front End Developer 
               when I began taking an interest in application 
               design and development. I am excited to take my learned skills
-              and knowledge and put them to use in the IT field. 
+              and knowledge and put them to use in the IT field!
             </p>
           </Col>
           </Row>

@@ -15,9 +15,9 @@ const App = () => {
 
   return (
 
-    <div className="lock-min pb-3">
+    <div className="lock-min pb-3 body">
       <Banner/>
-
+      
       <Row className="">
         <Col className="ml-3 mr-3">
         <CardDeck className="justify-content-center">
@@ -26,13 +26,9 @@ const App = () => {
             <Card.Body className="pt-3">
               <Card.Title>Hulu 2.0 Reproduction</Card.Title>
               <Card.Text>
-                This app is a reproduction of Hulu 2.0 using Next.js and 
-                Tailwind CSS framework. The app is built mobile first and uses a 
-                combo of grid and flexbox to properly display the app. It includes
-                cool features such as server side loading helping to optimize SEO
-                and Lazy Loading to only render the images in view. It also makes 
-                use of the new Just In Time (JIT) compiler. The images and movie 
-                info are fetched from the TMDB API.
+                I built this app as a reproduction of Hulu 2.0 using Next.js and 
+                Tailwind CSS. The app is built mobile first and uses a 
+                combo of grid and flexbox to properly display the app responsively up to 4k. It includes cool features such as server side rendering and lazy loading. It also makes use of the new Tailwind Just In Time (JIT) compiler. The images and movie info are fetched from the The Movie Database (TMDb).
               </Card.Text>
               <Button
                 className="mt-2"
@@ -50,13 +46,10 @@ const App = () => {
           </Card>
           <Card className="tiles mt-3">
             <Card.Img variant="top" src={`${process.env.PUBLIC_URL}/concrete.PNG`} />
-            <Card.Body className="pt-0">
+            <Card.Body className="pt-0 mt-3">
               <Card.Title>Concrete Volume Calculator</Card.Title>
               <Card.Text>
-                This app is a construction materials calculator that processes
-                dimesnions and calculates and displays the total cubic yardage 
-                for the pour. The customer is then able to place the order by
-                calling the API. 
+                I built this app as a takeoff calculator that processes dimensions, calculates the individual totals, and then displays the total cubic yardage for the pour. The customer is then able to place the order by calling the API which Proxies to a Lambda Express Server. In the server the order is confirmed and confirmation is sent back to the client. 
               </Card.Text>
               <Button
                 className="mt-2"
@@ -74,8 +67,8 @@ const App = () => {
           </Card>
           <Card className="tiles mt-3">
             <Card.Img variant="top" src={`${process.env.PUBLIC_URL}/jenga.PNG`} />
-            <Card.Body className="pt-2">
-              <Card.Title>Jenga Table Top Compainion App</Card.Title>
+            <Card.Body className="pt-2 mt-2">
+              <Card.Title>Jenga Table Top Compainion</Card.Title>
               <Card.Text>
                 This app is a companion for the board game Jenga. The player
                 is able to add and select player names. Then the game begins 
@@ -100,7 +93,7 @@ const App = () => {
           <Card className="tiles mt-3 pb-5">
             <Card.Img variant="top" src={`${process.env.PUBLIC_URL}/mike.png`} />
             <Card.Body className="">
-              <Card.Title>About Me</Card.Title>
+              <Card.Title>About Mike</Card.Title>
               <Card.Text>
                 Here you can find out about me and what makes me tick. 
               </Card.Text>
